@@ -1,0 +1,110 @@
+html {
+    background-color: var(--cor-primaria);
+    background-image: url(../images/bg-desktop.svg) ;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 55px 90px 0;   
+}
+
+.cabecalho img {
+    width: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "coluna-1 coluna-2"
+                         "rodape rodape";
+    padding: 88px 95px 0;
+}
+
+.container .coluna-1 {
+    grid: coluna-1;
+}
+
+.container .coluna-1 img {
+    max-width: 690px;
+}
+
+.container .coluna-2 {
+    grid: coluna-2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0 0 150px 60px;
+}
+
+.container .coluna-2 .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 25px;
+    font-size: 40px;
+}
+
+.container .coluna-2 .descricao {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 25px;
+    font-size: 17.5px;
+}
+
+.container .coluna-2 .botao {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--cor-primaria);
+    background-color: #fff;
+    align-self: flex-start;
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 8px;
+    text-decoration: none;
+    box-shadow: rgba(25, 26, 17, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.container .coluna-2 .botao:hover {
+    transition: 0.2s ease-in-out;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+}
+
+.rodape {
+    grid: rodape;
+}
+
+.rodape .social {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    padding-right: 95px;
+}
+
+.rodape .social i {
+    color: #fff;
+    border: solid 2px #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rodape .social i:hover {
+    background-color: var(--cor-secundaria);
+    transition: 0.3s ease-in-out;
+}
+
+
+
